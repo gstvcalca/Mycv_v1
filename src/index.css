@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+svg {
+  width: 30px;
+  height: 38px;
+}
+
+@layer components {
+  .border-bottom {
+    @apply border-b-[1px] border-solid border-white pb-2;
+  }
+
+  .small-icon-exp {
+    @apply w-8 h-9 rounded-sm
+  }
+}

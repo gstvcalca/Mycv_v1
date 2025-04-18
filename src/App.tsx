@@ -2,7 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { MainPage } from "./main-page";
+import { MainPage } from ".";
 import { PRDOPage } from "./PRDOPage";
 import { JLCPayroll } from "./JLCPayrollPage";
 
