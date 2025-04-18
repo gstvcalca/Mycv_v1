@@ -37,17 +37,17 @@ export function MainPage() {
         </div>
         <div className="flex flex-1 w-full">
           <div className="flex-1 header-container">
-            <div className="header-description flex gap-2">
+            <div className="header-description flex gap-6">
               <div className="w-fit">
                 <img
                   src="IMG_2081.jpg"
-                  className="size-52 rounded-full border-white border-solid border-[1px]"
+                  className="size-56 rounded-full border-white border-solid border-[1px]"
                 />
               </div>
               <div className="flex flex-col py-6 justify-between">
                 <div>
-                  <h1 data-118n="greeting">Hi, I'm Gustavo 👋</h1>
-                  <h3 data-118n="position">Software developer</h3>
+                  <h1 data-118n="greeting" className="text-4xl font-bold text-text-primary">Hi, I'm Gustavo 👋</h1>
+                  <h3 data-118n="position" className="text-xl font-normal text-text-secondary">Software developer</h3>
                   <div className="location flex py-3">
                     <svg
                       className="icon"
@@ -63,13 +63,7 @@ export function MainPage() {
                 </div>
                 <div className="social_media">
                   <div className="social_icons flex gap-3 justify-evenly">
-                    <div className="button_bg">
-                      <a
-                        href="https://www.instagram.com/gstvcalca/"
-                        target="_blank">
-                        <InstagramSVG className="stroke-1 stroke-bg-primary size-6" />
-                      </a>
-                    </div>
+                    
                     <div className="button_bg">
                       <a
                         href="https://www.linkedin.com/in/gcalca/"
@@ -83,7 +77,7 @@ export function MainPage() {
                       </a>
                     </div>
                     <div className="button_bg">
-                      <a href="mailto:gstv.calca@gmail.com">
+                      <a href="mailto:gstv.calca@gmail.com" target="_blank">
                         <EmailSVG className="stroke-1 stroke-bg-primary size-6" />
                       </a>
                     </div>

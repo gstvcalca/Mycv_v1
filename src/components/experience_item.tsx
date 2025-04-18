@@ -15,7 +15,7 @@ export function ExperienceItem({
       {svgElement}
       <div className="experience_bar flex items-center border-[1px] border-white rounded-xl w-[300px]">
         <div
-          className="actual_experience w-1/3 flex items-center justify-center bg-black rounded-xl"
+          className={"actual_experience w-" + years + "/3 flex items-center justify-center bg-gradient-to-r from-bg-gradient-start to-bg-gradient-end rounded-xl"}
           title={title}>
           <span>
             {years} <span data-118n="year">year{years > 1 ? "s" : null}</span>
