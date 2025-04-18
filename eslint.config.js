@@ -23,6 +23,12 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      "unkownAtRules": [
+        true,
+        {
+          "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen", "layer"]
+        }
+      ]
     },
   },
 )

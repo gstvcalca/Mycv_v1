@@ -1,12 +1,13 @@
 import { BrazilFlagSVG } from "./components/brazil_flag";
 import { EmailSVG } from "./components/email";
+import { ExperienceItem } from "./components/experience_item";
 import { GitHubSVG } from "./components/github";
 import { InstagramSVG } from "./components/instagram";
 import { LinkedInSVG } from "./components/linkedin";
 import { O365SVG } from "./components/o365";
 import { PowerAutomateSVG } from "./components/pautomate";
 import { PbiSVG } from "./components/pbi";
-import { PowerShellSVG } from "./components/PowerShell";
+import { PowerShellSVG } from "./components/powerShell";
 import { PythonSVG } from "./components/python";
 import { ReactSVG } from "./components/react";
 import { TSSVG } from "./components/ts";
@@ -61,69 +62,52 @@ export function MainPage() {
                   </div>
                 </div>
                 <div className="social_media">
-                  <div className="social_icons flex gap-2 justify-evenly">
+                  <div className="social_icons flex gap-3 justify-evenly">
                     <div className="button_bg">
                       <a
                         href="https://www.instagram.com/gstvcalca/"
                         target="_blank">
-                        <InstagramSVG />
+                        <InstagramSVG className="stroke-1 stroke-bg-primary size-6" />
                       </a>
                     </div>
                     <div className="button_bg">
                       <a
                         href="https://www.linkedin.com/in/gcalca/"
                         target="_blank">
-                        <LinkedInSVG />
+                        <LinkedInSVG className="stroke-1 stroke-bg-primary size-6" />
                       </a>
                     </div>
                     <div className="button_bg">
                       <a href="https://github.com/gstvcalca" target="_blank">
-                        <GitHubSVG />
+                        <GitHubSVG className="stroke-1 stroke-bg-primary size-6" />
                       </a>
                     </div>
                     <div className="button_bg">
                       <a href="mailto:gstv.calca@gmail.com">
-                        <EmailSVG />
+                        <EmailSVG className="stroke-1 stroke-bg-primary size-6" />
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="experience_div">
-              <div className="experience_item flex items-center gap-2">
-                <ReactSVG />
-                <div className="experience_bar flex items-center border-[1px] border-white rounded-xl w-[300px]">
-                  <div
-                    className="actual_experience w-1/3 flex items-center justify-center bg-black rounded-xl"
-                    title="learning experience">
-                    <span>
-                      1 <span data-118n="year">year</span>*
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="experience_item">
-                <PythonSVG className="" />
-                <div className="experience_bar">
-                  <div className="actual_experience two_years">
-                    <span>
-                      2 <span data-118n="years">years</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="experience_item">
-                <PowerShellSVG />
-                <div className="experience_bar">
-                  <div className="actual_experience two_years">
-                    <span>
-                      2 <span data-118n="years">years</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="logos_only flex flex-1 gap-8">
+            <div className="experience_div my-2 flex-col w-fit">
+              <ExperienceItem
+                svgElement={<ReactSVG />}
+                title="Learning experience"
+                years={1}
+              />
+              <ExperienceItem
+                svgElement={<PythonSVG />}
+                title="Python 3.9"
+                years={2}
+              />
+              <ExperienceItem
+                svgElement={<PowerShellSVG />}
+                title="PowerShell"
+                years={2}
+              />
+              <div className="logos_only flex gap-8 justify-evenly mt-4">
                 <TSSVG className="border-bottom small-icon-exp" />
                 <PowerAutomateSVG className="border-bottom small-icon-exp" />
                 <O365SVG className="border-bottom small-icon-exp" />
@@ -136,14 +120,14 @@ export function MainPage() {
               <h3 data-118n="languages">Languages</h3>
               <div className="separator"></div>
               <div className="languages_info">
-                <div className="language_item">
+                <div className="language_item flex items-center gap-2">
                   <UkFlagSVG />
                   <div>
                     <span className="infos_title">EN — </span>
                     <span data-118n="fluent">Fluent</span>
                   </div>
                 </div>
-                <div className="language_item">
+                <div className="language_item flex items-center gap-2">
                   <BrazilFlagSVG />
                   <div>
                     <span className="infos_title">PT-BR —</span>
@@ -160,7 +144,8 @@ export function MainPage() {
                   <span className="education-title" data-118n="bachelor">
                     Bachelor in Computer Engineering
                   </span>
-                  <span>
+                  <br />
+                  <span className="gap-1 flex">
                     2017 – 2021,
                     <span data-118n="eep">
                       Engineering University of Piracicaba, Brazil
