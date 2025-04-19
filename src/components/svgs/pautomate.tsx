@@ -6,7 +6,7 @@ export function PowerAutomateSVG({className=""}: svgInterface) {
       <title>Power Automate</title>
       <defs>
         <filter id="filter0_f">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -16,7 +16,7 @@ export function PowerAutomateSVG({className=""}: svgInterface) {
           <feGaussianBlur stdDeviation="0.4" result="effect1_foregroundBlur" />
         </filter>
         <filter id="filter1_f">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -32,8 +32,8 @@ export function PowerAutomateSVG({className=""}: svgInterface) {
           x2="29"
           y2="10"
           gradientUnits="userSpaceOnUse">
-          <stop stop-color="#0D36A5" />
-          <stop offset="1" stop-color="#1152D4" />
+          <stop stopColor="#0D36A5" />
+          <stop offset="1" stopColor="#1152D4" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -42,8 +42,8 @@ export function PowerAutomateSVG({className=""}: svgInterface) {
           x2="46"
           y2="86"
           gradientUnits="userSpaceOnUse">
-          <stop stop-color="#84CAFF" />
-          <stop offset="1" stop-color="#61B1FB" />
+          <stop stopColor="#84CAFF" />
+          <stop offset="1" stopColor="#61B1FB" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -52,8 +52,8 @@ export function PowerAutomateSVG({className=""}: svgInterface) {
           x2="37.5"
           y2="86"
           gradientUnits="userSpaceOnUse">
-          <stop stop-color="#3B90F5" />
-          <stop offset="1" stop-color="#2A78EE" />
+          <stop stopColor="#3B90F5" />
+          <stop offset="1" stopColor="#2A78EE" />
         </linearGradient>
         <clipPath id="clip0">
           <rect width="96" height="96" fill="white" />
@@ -62,8 +62,8 @@ export function PowerAutomateSVG({className=""}: svgInterface) {
           <rect width="96" height="96" fill="white" />
         </clipPath>
       </defs>
-      <g clip-path="url(#clip0)">
-        <g clip-path="url(#clip1)">
+      <g clipPath="url(#clip0)">
+        <g clipPath="url(#clip1)">
           <mask
             id="mask0"
             mask-type="alpha"
@@ -83,14 +83,14 @@ export function PowerAutomateSVG({className=""}: svgInterface) {
               <path
                 d="M63 10.4L-5 86.4H63L97 48.4L63 10.4Z"
                 fill="black"
-                fill-opacity="0.24"
+                fillOpacity="0.24"
               />
             </g>
             <g filter="url(#filter1_f)">
               <path
                 d="M63 12L-5 88H63L97 50L63 12Z"
                 fill="black"
-                fill-opacity="0.32"
+                fillOpacity="0.32"
               />
             </g>
             <path d="M-5 86L63 10L97 48L63 86H-5Z" fill="url(#paint1_linear)" />

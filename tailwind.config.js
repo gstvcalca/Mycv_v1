@@ -17,6 +17,9 @@ export default {
         "bg-gradient-end": "var(--bg-gradient-end)",
         "bg-modal": "var(--bg-modal)",
       },
+      backgroundImage: {
+        "diagonal-stripes": "repeating-linear-gradient(-45deg, var(--bg-secondary), var(--bg-secondary) 2px, var(--bg-primary) 2px, var(--bg-primary) 5px)",
+      },
     },
     
   },

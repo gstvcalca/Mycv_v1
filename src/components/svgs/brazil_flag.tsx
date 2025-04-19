@@ -8,7 +8,7 @@ export function BrazilFlagSVG({className=""}:svgInterface) {
           <clipPath id="g">
             <path d="m-31.5 0v-70h63v70zm31.5-47v12h31.5v-12z" />
           </clipPath>
-          <use clip-path="url(#g)" xlinkHref="#O" />
+          <use clipPath="url(#g)" xlinkHref="#O" />
           <path d="M5-35H31.5V-25H5z" />
           <path d="m21.5-35h10v35h-10z" />
         </g>
@@ -44,7 +44,7 @@ export function BrazilFlagSVG({className=""}:svgInterface) {
         <path
           id="D"
           d="m-31.5 0h33a30 30 0 0 0 30-30v-10a30 30 0 0 0-30-30h-33zm13-13h19a19 19 0 0 0 19-19v-6a19 19 0 0 0-19-19h-19z"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         />
         <path
           id="E"
@@ -62,12 +62,12 @@ export function BrazilFlagSVG({className=""}:svgInterface) {
         <path
           id="O"
           d="m0 0a31.5 35 0 0 0 0-70 31.5 35 0 0 0 0 70m0-13a18.5 22 0 0 0 0-44 18.5 22 0 0 0 0 44"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         />
         <path
           id="P"
           d="m-31.5 0h13v-26h28a22 22 0 0 0 0-44h-40zm13-39h27a9 9 0 0 0 0-18h-27z"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         />
         <path
           id="S"
@@ -82,7 +82,7 @@ export function BrazilFlagSVG({className=""}:svgInterface) {
       <circle r="735" fill="#302681" />
       <path
         d="m-2205 1470a1785 1785 0 0 1 3570 0h-105a1680 1680 0 1 0-3360 0z"
-        clip-path="url(#B)"
+        clipPath="url(#B)"
         fill="#fff"
       />
       <g transform="translate(-420,1470)" fill="#009440">

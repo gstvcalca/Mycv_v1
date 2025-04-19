@@ -16,6 +16,9 @@ import { UkFlagSVG } from "./components/svgs/uk_flag";
 import { MapPin } from "lucide-react";
 import { ChangeEvent } from "react";
 import { InfoSection } from "./components/info_section";
+import { MainSection } from "./components/main_section";
+import { PortfolioItem } from "./components/portfolio_item";
+import { WorkItem } from "./components/work_item";
 
 export function MainPage() {
   function setThemeVariables() {
@@ -64,7 +67,7 @@ export function MainPage() {
         "This project is an adaptation from the 2024 Next Level Week event hosted by Rocketseat. After a few changes and improvements it became my frontend project for the Web Development course I'm taking at Laneway Education.",
       caputteeno_description:
         "This project is a challenge released by Rocketseat and done with the help of @kipper.dev :)",
-      work_experience: "Work experience",
+      "work experience": "Work experience",
       jlc_analyst_title: "IT Analyst at JLC maintenance services LTD",
       jlc_analyst_year: "September 2021 - November 2023 (2 years 2 months)",
       jlc_analyst_description:
@@ -98,7 +101,7 @@ export function MainPage() {
         "Este projeto é uma adaptação do evento Next Level Week 2024, promovido pela Rocketseat. Após algumas mudanças e melhorias, ele se tornou meu projeto de frontend para o curso de Desenvolvimento Web que estou fazendo na Laneway Education.",
       caputteeno_description:
         "Este projeto é um desafio lançado pela Rocketseat e feito com a ajuda de @kipper.dev :)",
-      work_experience: "Experiência",
+      "work experience": "Experiência",
       jlc_analyst_title: "Analista de TI na JLC Serviços de Manutenção",
       jlc_analyst_year: "Setembro 2021 - Novembro 2023 (2 anos e 2 meses)",
       jlc_analyst_description:
@@ -254,21 +257,23 @@ export function MainPage() {
               </div>
             </InfoSection>
             <InfoSection title="education">
-                <div className="education-item border-l-2 border-border-color border-solid pl-2">
-                  <span className="education-title font-semibold" data-118n="bachelor">
-                    Bachelor in Computer Engineering
+              <div className="education-item border-l-2 border-border-color border-solid pl-2">
+                <span
+                  className="education-title font-semibold"
+                  data-118n="bachelor">
+                  Bachelor in Computer Engineering
+                </span>
+                <br />
+                <span className="gap-1 flex">
+                  2017 – 2021,
+                  <span data-118n="eep">
+                    Engineering University of Piracicaba, Brazil
                   </span>
-                  <br />
-                  <span className="gap-1 flex">
-                    2017 – 2021,
-                    <span data-118n="eep">
-                      Engineering University of Piracicaba, Brazil
-                    </span>
-                  </span>
-                </div>
+                </span>
+              </div>
             </InfoSection>
             <InfoSection title="certification">
-            <div className="certification">
+              <div className="certification">
                 <ul className="c1 list-disc">
                   <li className="c2">6 Sigma Green Belt</li>
                   <li>Microsoft PL-900 (Power Platform)</li>
@@ -278,114 +283,23 @@ export function MainPage() {
             </InfoSection>
           </div>
         </div>
-        <section className="work_experience">
-          <div className="work_title">
-            <h2 data-118n="work_experience">Work experience</h2>
-            <div className="separator_3"></div>
-          </div>
-
-          <div className="work_item">
-            <h3 data-118n="jlc_analyst_title">
-              IT Analyst at JLC maintenance services LTD
-            </h3>
-            <p data-118n="jlc_analyst_year">
-              September 2021 - November 2023 (2 years 2 months)
-            </p>
-            <div className="separator_2"></div>
-            <p data-118n="jlc_analyst_description">
-              Using mainly Python and PowerShell, I was in charge of automating
-              HR and charging processes. That includes development of unit
-              tests, scripts, BOTs, as well as updating the processes docs to
-              BPMN standards and building PBI reports to track KPIs.
-            </p>
-          </div>
-          <div className="work_item">
-            <h3 data-118n="cat_title">IT Intern at Caterpillar Inc.</h3>
-            <p data-118n="cat_year">
-              February 2020 - September 2021 (1 year 8 months)
-            </p>
-            <div className="separator_2"></div>
-            <p data-118n="cat_description">
-              Provided user support to create and publish PBI reports,
-              development of automation solutions using O365 (Power Apps, Power
-              Automate etc) and Automation Anywhere, documentation as-is and
-              to-be included (BPMN).
-            </p>
-          </div>
-        </section>
-        <section className="portfolio">
-          <div className="work_title">
-            <h2 data-118n="portfolio">Portfolio</h2>
-            <div className="separator_3"></div>
-          </div>
-          <div className="portfolio_items">
-            <div className="portfolio_item">
-              <button className="portfolio_btn open_modal_button">
-                <img src="planner_thumbnail.png" />
-              </button>
-              <div className="warning_modal_container">
-                <div className="warning_modal_content">
-                  <div className="warning_modal_title">
-                    <h3 data-118n="modal_greeting">Hello There,</h3>
-                    <button className="close_modal_button">X</button>
-                  </div>
-                  <p data-118n="modal_description">
-                    I really appreciate your curiosity to see the projects I've
-                    developed. This is a friendly reminder that they are hosted
-                    on two free platforms called Vercel (frontend) and Render
-                    (backend). The backend usually takes 2 minutes to start
-                    answering requests for the first time after being idle for a
-                    few minutes. So, please, open the link, wait for two minutes
-                    and refresh the page, then everything should be working
-                    properly. Thank you!
-                  </p>
-                  <a
-                    href="https://planner-nine-sooty.vercel.app/"
-                    className="go_to_vercel_anchor"
-                    data-118n="go_to_vercel">
-                    Go to vercel
-                  </a>
-                </div>
-              </div>
-              <h3>Plann.er</h3>
-              <div className="separator_4"></div>
+        <MainSection title="portfolio">
+          <div className="portfolio_gallery flex gap-3">
+            <PortfolioItem
+              title="Plann.er"
+              href="/planner"
+              img_url="./planner_thumbnail.png">
               <p data-118n="planner_description">
                 This project is an adaptation from the 2024 Next Level Week
                 event hosted by Rocketseat. After a few changes and improvements
                 it became my frontend project for the Web Development course I'm
                 taking at Laneway Education.
               </p>
-            </div>
-            <div className="portfolio_item">
-              <button className="portfolio_btn open_modal_button">
-                <img src="caputteeno_thumbnail.png" />
-              </button>
-              <div className="warning_modal_container">
-                <div className="warning_modal_content">
-                  <div className="warning_modal_title">
-                    <h3 data-118n="modal_greeting">Hello There,</h3>
-                    <button className="close_modal_button">X</button>
-                  </div>
-                  <p data-118n="modal_description">
-                    I really appreciate your curiosity to see the projects I've
-                    developed. This is a friendly reminder that they are hosted
-                    on two free platforms called Vercel (frontend) and Render
-                    (backend). The backend usually takes 2 minutes to start
-                    answering requests for the first time after being idle for a
-                    few minutes. So, please, open the link, wait for two minutes
-                    and refresh the page, then everything should be working
-                    properly. Thank you!
-                  </p>
-                  <a
-                    href="https://computer-force.vercel.app/"
-                    className="go_to_vercel_anchor"
-                    data-118n="go_to_vercel">
-                    Go to vercel
-                  </a>
-                </div>
-              </div>
-              <h3>Caputteeno</h3>
-              <div className="separator_4"></div>
+            </PortfolioItem>
+            <PortfolioItem
+              title="caputteeno"
+              href="/caputteeno"
+              img_url="./caputteeno_thumbnail.png">
               <p data-118n="caputteeno_description">
                 This project is a challenge released by Rocketseat and done with
                 the help of
@@ -394,17 +308,47 @@ export function MainPage() {
                 </a>{" "}
                 :)
               </p>
-            </div>
-            <div className="portfolio_item">
-              <a href="/portalrdo.html">
-                <img src="arcelormittal.svg" />
-              </a>
-              <h3>ArcelorMittal Portal RDO</h3>
-              <div className="separator_4"></div>
-              <p data-118n="prdo_description"></p>
-            </div>
+            </PortfolioItem>
+            <PortfolioItem
+              title="ArcelorMittal Portal RDO"
+              href="/prdo"
+              img_url="./arcelormittal.svg">
+              <p data-118n="prdo_description">
+                This was the main project I did at JLC. Using Python, PowerShell
+                and Power BI, I automated a billing proccess that used to take
+                almost two days each week of an HR employee.
+              </p>
+            </PortfolioItem>
           </div>
-        </section>
+        </MainSection>
+        <MainSection title="work experience">
+          <div className="flex flex-col gap-5">
+          <WorkItem
+            title="IT Analyst at JLC Maintenance Services LTD"
+            title_translation_reference="jlc_analyst_title"
+            position_time="September 2021 - November 2023 (2 years 2 months)"
+            position_time_translation_reference="jlc_analyst_year">
+            <p data-118n="jlc_analyst_description">
+              Using mainly Python and PowerShell, I was in charge of automating
+              HR and charging processes. That includes development of unit
+              tests, scripts, BOTs, as well as updating the processes docs to
+              BPMN standards and building PBI reports to track KPIs.
+            </p>
+          </WorkItem>
+          <WorkItem
+            title="IT Intern at Caterpillar Inc."
+            title_translation_reference="cat_title"
+            position_time="February 2020 - September 2021 (1 year 8 months)"
+            position_time_translation_reference="cat_year">
+            <p data-118n="cat_description">
+              Provided user support to create and publish PBI reports,
+              development of automation solutions using O365 (Power Apps, Power
+              Automate etc) and Automation Anywhere, documentation as-is and
+              to-be included (BPMN).
+            </p>
+          </WorkItem>
+          </div>
+        </MainSection>
       </main>
     </div>
   );

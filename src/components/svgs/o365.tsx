@@ -44,8 +44,8 @@ export function O365SVG({className=""}: svgInterface) {
           r="1"
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(17.4186 10.6383) rotate(110.528) scale(33.3657 58.1966)">
-          <stop offset="0.06441" stop-color="#AE7FE2" />
-          <stop offset="1" stop-color="#0078D4" />
+          <stop offset="0.06441" stopColor="#AE7FE2" />
+          <stop offset="1" stopColor="#0078D4" />
         </radialGradient>
         <linearGradient
           id="paint1_linear_2994_8373"
@@ -54,8 +54,8 @@ export function O365SVG({className=""}: svgInterface) {
           x2="12.7513"
           y2="29.6347"
           gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#114A8B" />
-          <stop offset="1" stop-color="#0078D4" stop-opacity="0" />
+          <stop offset="0" stopColor="#114A8B" />
+          <stop offset="1" stopColor="#0078D4" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint2_radial_2994_8373"
@@ -64,8 +64,8 @@ export function O365SVG({className=""}: svgInterface) {
           r="1"
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(10.4299 36.3511) rotate(-8.36717) scale(31.0503 20.5108)">
-          <stop offset="0.133928" stop-color="#D59DFF" />
-          <stop offset="1" stop-color="#5E438F" />
+          <stop offset="0.133928" stopColor="#D59DFF" />
+          <stop offset="1" stopColor="#5E438F" />
         </radialGradient>
         <linearGradient
           id="paint3_linear_2994_8373"
@@ -74,8 +74,8 @@ export function O365SVG({className=""}: svgInterface) {
           x2="35.2552"
           y2="32.6916"
           gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#493474" />
-          <stop offset="1" stop-color="#8C66BA" stop-opacity="0" />
+          <stop offset="0" stopColor="#493474" />
+          <stop offset="1" stopColor="#8C66BA" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint4_radial_2994_8373"
@@ -84,8 +84,8 @@ export function O365SVG({className=""}: svgInterface) {
           r="1"
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(41.0552 26.504) rotate(-165.772) scale(24.9228 41.9552)">
-          <stop offset="0.0584996" stop-color="#50E6FF" />
-          <stop offset="1" stop-color="#436DCD" />
+          <stop offset="0.0584996" stopColor="#50E6FF" />
+          <stop offset="1" stopColor="#436DCD" />
         </radialGradient>
         <linearGradient
           id="paint5_linear_2994_8373"
@@ -94,8 +94,8 @@ export function O365SVG({className=""}: svgInterface) {
           x2="24.4868"
           y2="3.05655"
           gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#2D3F80" />
-          <stop offset="1" stop-color="#436DCD" stop-opacity="0" />
+          <stop offset="0" stopColor="#2D3F80" />
+          <stop offset="1" stopColor="#436DCD" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint6_radial_2994_8373"
@@ -104,8 +104,8 @@ export function O365SVG({className=""}: svgInterface) {
           r="1"
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(41.0552 26.504) rotate(-165.772) scale(24.9228 41.9552)">
-          <stop offset="0.0584996" stop-color="#50E6FF" />
-          <stop offset="1" stop-color="#436DCD" />
+          <stop offset="0.0584996" stopColor="#50E6FF" />
+          <stop offset="1" stopColor="#436DCD" />
         </radialGradient>
         <linearGradient
           id="paint7_linear_2994_8373"
@@ -114,8 +114,8 @@ export function O365SVG({className=""}: svgInterface) {
           x2="24.4868"
           y2="3.05655"
           gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#2D3F80" />
-          <stop offset="1" stop-color="#436DCD" stop-opacity="0" />
+          <stop offset="0" stopColor="#2D3F80" />
+          <stop offset="1" stopColor="#436DCD" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
