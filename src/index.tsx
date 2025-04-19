@@ -165,16 +165,16 @@ export function MainPage() {
             <BrazilFlagSVG className="size-8" />
           </div>
         </div>
-        <div className="flex flex-1 w-full bg-grid bg-no-repeat bg-center">
+        <div className="flex flex-1 w-full bg-grid bg-no-repeat bg-center flex-col lg:flex-row">
           <div className="flex-1 header-container gap-3 flex flex-col">
-            <div className="header-description flex gap-6">
+            <div className="header-description flex lg:gap-6 flex-col lg:flex-row items-center">
               <div className="w-fit">
                 <img
                   src="./IMG_2081.jpg"
-                  className="size-56 rounded-full border-border-color border-solid border-[1px]"
+                  className="size-96 lg:size-56 rounded-full border-border-color border-solid border-[1px]"
                 />
               </div>
-              <div className="flex flex-col py-6 justify-between">
+              <div className="flex flex-col py-6 justify-between gap-6">
                 <div>
                   <h1
                     data-118n="greeting"
@@ -192,7 +192,7 @@ export function MainPage() {
                   </div>
                 </div>
                 <div className="social_media">
-                  <div className="social_icons flex gap-3 justify-between items-center max-w-72">
+                  <div className="social_icons flex gap-3 justify-between items-center lg:max-w-72">
                     <SocialItem
                       href="https://www.instagram.com/gstvcalca/"
                       SvgElement={InstagramSVG}
@@ -213,7 +213,7 @@ export function MainPage() {
                 </div>
               </div>
             </div>
-            <div className="experience_div my-2 flex-col w-fit gap-1 flex">
+            <div className="experience_div my-2 flex-col w-fit gap-1 flex mx-auto lg:mx-1">
               <ExperienceItem
                 svgElement={<ReactSVG className="size-9" />}
                 title="React: learning experience"
@@ -239,7 +239,7 @@ export function MainPage() {
           </div>
           <div className="right-side flex flex-col gap-7 p-2">
             <InfoSection title="languages">
-              <div className="languages_info">
+              <div className="languages_info flex w-2/3 lg:w-full justify-center items-center lg:items-start flex-col gap-1 ">
                 <div className="language_item flex items-center gap-2">
                   <UkFlagSVG className="size-8" />
                   <div>
@@ -281,7 +281,7 @@ export function MainPage() {
           </div>
         </div>
         <MainSection title="portfolio">
-          <div className="portfolio_gallery flex gap-3">
+          <div className="portfolio_gallery flex gap-3 flex-col lg:flex-row">
             <PortfolioItem
               title="Plann.er"
               href="/planner"
