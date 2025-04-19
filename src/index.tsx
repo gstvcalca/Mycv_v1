@@ -1,17 +1,19 @@
-import { BrazilFlagSVG } from "./components/brazil_flag";
-import { EmailSVG } from "./components/email";
+import { BrazilFlagSVG } from "./components/svgs/brazil_flag";
+import { EmailSVG } from "./components/svgs/email";
 import { ExperienceItem } from "./components/experience_item";
-import { GitHubSVG } from "./components/github";
-import { InstagramSVG } from "./components/instagram";
-import { LinkedInSVG } from "./components/linkedin";
-import { O365SVG } from "./components/o365";
-import { PowerAutomateSVG } from "./components/pautomate";
-import { PbiSVG } from "./components/pbi";
-import { PowerShellSVG } from "./components/powerShell";
-import { PythonSVG } from "./components/python";
-import { ReactSVG } from "./components/react";
-import { TSSVG } from "./components/ts";
-import { UkFlagSVG } from "./components/uk_flag";
+import { GitHubSVG } from "./components/svgs/github";
+import { InstagramSVG } from "./components/svgs/instagram";
+import { LinkedInSVG } from "./components/svgs/linkedin";
+import { O365SVG } from "./components/svgs/o365";
+import { PowerAutomateSVG } from "./components/svgs/pautomate";
+import { PbiSVG } from "./components/svgs/pbi";
+import { PowerShellSVG } from "./components/svgs/powerShell";
+import { PythonSVG } from "./components/svgs/python";
+import { ReactSVG } from "./components/svgs/react";
+import { SocialItem } from "./components/social_item";
+import { TSSVG } from "./components/svgs/ts";
+import { UkFlagSVG } from "./components/svgs/uk_flag";
+import { MapPin } from "lucide-react";
 
 export function MainPage() {
   return (
@@ -36,7 +38,7 @@ export function MainPage() {
           </div>
         </div>
         <div className="flex flex-1 w-full">
-          <div className="flex-1 header-container">
+          <div className="flex-1 header-container gap-3 flex flex-col">
             <div className="header-description flex gap-6">
               <div className="w-fit">
                 <img
@@ -46,58 +48,56 @@ export function MainPage() {
               </div>
               <div className="flex flex-col py-6 justify-between">
                 <div>
-                  <h1 data-118n="greeting" className="text-4xl font-bold text-text-primary">Hi, I'm Gustavo 👋</h1>
-                  <h3 data-118n="position" className="text-xl font-normal text-text-secondary">Software developer</h3>
-                  <div className="location flex py-3">
-                    <svg
-                      className="icon"
-                      fill="#ffffff"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 56 56"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M 27.9883 43.1992 C 28.9492 43.1992 30.1680 39.4492 30.1680 32.5352 L 30.1680 21.4961 C 33.9883 20.5117 36.8008 17.0430 36.8008 12.9180 C 36.8008 8.0664 32.8867 4.1055 27.9883 4.1055 C 23.1133 4.1055 19.1992 8.0664 19.1992 12.9180 C 19.1992 17.0430 21.9883 20.5117 25.8086 21.4726 L 25.8086 32.5352 C 25.8086 39.4258 27.0508 43.1992 27.9883 43.1992 Z M 25.4805 13.4102 C 23.8867 13.4102 22.4805 12.0039 22.4805 10.3867 C 22.4805 8.7461 23.8867 7.3633 25.4805 7.3633 C 27.1211 7.3633 28.4805 8.7461 28.4805 10.3867 C 28.4805 12.0039 27.1211 13.4102 25.4805 13.4102 Z M 27.9883 51.8945 C 42.1680 51.8945 50.3711 46.9727 50.3711 41.7461 C 50.3711 35.4414 40.3399 31.6211 33.8711 31.5977 L 33.8711 35.2539 C 38.3711 35.2774 45.3789 37.7148 45.3789 41.1836 C 45.3789 44.8633 38.7696 47.9570 27.9883 47.9570 C 17.2305 47.9570 10.6211 44.8867 10.6211 41.1836 C 10.6211 37.7148 17.6289 35.2774 22.1289 35.2539 L 22.1289 31.5977 C 15.6602 31.6211 5.6289 35.4414 5.6289 41.7461 C 5.6289 46.9727 13.8321 51.8945 27.9883 51.8945 Z" />
-                    </svg>
-                    <span>Kirribili, NSW</span>
+                  <h1
+                    data-118n="greeting"
+                    className="text-4xl font-bold text-text-primary">
+                    Hi, I'm Gustavo 👋
+                  </h1>
+                  <h3
+                    data-118n="position"
+                    className="text-xl font-normal text-text-secondary">
+                    Software developer
+                  </h3>
+                  <div className="location flex py-2 items-center gap-2">
+                    <MapPin strokeWidth={0.75} />
+                    <span>Kirribili, Sydney</span>
                   </div>
                 </div>
                 <div className="social_media">
-                  <div className="social_icons flex gap-3 justify-evenly">
-                    
-                    <div className="button_bg">
-                      <a
-                        href="https://www.linkedin.com/in/gcalca/"
-                        target="_blank">
-                        <LinkedInSVG className="stroke-1 stroke-bg-primary size-6" />
-                      </a>
-                    </div>
-                    <div className="button_bg">
-                      <a href="https://github.com/gstvcalca" target="_blank">
-                        <GitHubSVG className="stroke-1 stroke-bg-primary size-6" />
-                      </a>
-                    </div>
-                    <div className="button_bg">
-                      <a href="mailto:gstv.calca@gmail.com" target="_blank">
-                        <EmailSVG className="stroke-1 stroke-bg-primary size-6" />
-                      </a>
-                    </div>
+                  <div className="social_icons flex gap-3 justify-between items-center">
+                    <SocialItem
+                      href="https://www.instagram.com/gstvcalca/"
+                      SvgElement={InstagramSVG}
+                    />
+                    <SocialItem
+                      href="https://www.linkedin.com/in/gcalca/"
+                      SvgElement={LinkedInSVG}
+                    />
+                    <SocialItem
+                      href="https://github.com/gstvcalca"
+                      SvgElement={GitHubSVG}
+                    />
+                    <SocialItem
+                      href="mailto:gstv.calca@gmail.com"
+                      SvgElement={EmailSVG}
+                    />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="experience_div my-2 flex-col w-fit">
+            <div className="experience_div my-2 flex-col w-fit gap-1 flex">
               <ExperienceItem
-                svgElement={<ReactSVG />}
+                svgElement={<ReactSVG className="size-9"/>}
                 title="Learning experience"
                 years={1}
               />
               <ExperienceItem
-                svgElement={<PythonSVG />}
+                svgElement={<PythonSVG className="size-9"/>}
                 title="Python 3.9"
                 years={2}
               />
               <ExperienceItem
-                svgElement={<PowerShellSVG />}
+                svgElement={<PowerShellSVG className="size-9"/>}
                 title="PowerShell"
                 years={2}
               />
