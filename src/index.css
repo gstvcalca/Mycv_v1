@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-primary: white;
+  --text-secondary: #b3b3b3;
+  --bg-primary: #2c2c2c;
+  --bg-secondary: rgb(60, 60, 60);
+  --border-color: #b3b3b3;
+  --bg-gradient-start: #464cf6;
+  --bg-gradient-end: #77ccf4;
+  --bg-modal: rgba(0, 0, 0, 0.8);
+}
+
 svg {
   width: 30px;
   height: 38px;
