@@ -165,7 +165,7 @@ export function MainPage() {
             <BrazilFlagSVG className="size-8" />
           </div>
         </div>
-        <div className="flex flex-1 w-full">
+        <div className="flex flex-1 w-full bg-grid bg-no-repeat bg-center">
           <div className="flex-1 header-container gap-3 flex flex-col">
             <div className="header-description flex gap-6">
               <div className="w-fit">
@@ -192,7 +192,7 @@ export function MainPage() {
                   </div>
                 </div>
                 <div className="social_media">
-                  <div className="social_icons flex gap-3 justify-between items-center">
+                  <div className="social_icons flex gap-3 justify-between items-center max-w-72">
                     <SocialItem
                       href="https://www.instagram.com/gstvcalca/"
                       SvgElement={InstagramSVG}
@@ -237,7 +237,7 @@ export function MainPage() {
               </div>
             </div>
           </div>
-          <div className="right-side flex flex-col gap-7">
+          <div className="right-side flex flex-col gap-7 p-2">
             <InfoSection title="languages">
               <div className="languages_info">
                 <div className="language_item flex items-center gap-2">
@@ -257,24 +257,21 @@ export function MainPage() {
               </div>
             </InfoSection>
             <InfoSection title="education">
-              <div className="education-item border-l-2 border-border-color border-solid pl-2">
-                <span
-                  className="education-title font-semibold"
+              <div className="border-l-2 border-border-color border-solid pl-2 py-1">
+                <p
+                  className="education-title font-semibold mr-1"
                   data-118n="bachelor">
                   Bachelor in Computer Engineering
-                </span>
-                <br />
-                <span className="gap-1 flex">
-                  2017 – 2021,
-                  <span data-118n="eep">
-                    Engineering University of Piracicaba, Brazil
-                  </span>
-                </span>
+                </p>
+                <p data-118n="eep">
+                  Engineering University of Piracicaba, Brazil
+                </p>
+                <p className="text-text-secondary text-sm">2017 – 2021</p>
               </div>
             </InfoSection>
             <InfoSection title="certification">
-              <div className="certification">
-                <ul className="c1 list-disc">
+              <div className="certification ">
+                <ul className="c1 list-disc list-inside">
                   <li className="c2">6 Sigma Green Belt</li>
                   <li>Microsoft PL-900 (Power Platform)</li>
                   <li>Microsoft DA-100 (Power BI)</li>
@@ -323,30 +320,30 @@ export function MainPage() {
         </MainSection>
         <MainSection title="work experience">
           <div className="flex flex-col gap-5">
-          <WorkItem
-            title="IT Analyst at JLC Maintenance Services LTD"
-            title_translation_reference="jlc_analyst_title"
-            position_time="September 2021 - November 2023 (2 years 2 months)"
-            position_time_translation_reference="jlc_analyst_year">
-            <p data-118n="jlc_analyst_description">
-              Using mainly Python and PowerShell, I was in charge of automating
-              HR and charging processes. That includes development of unit
-              tests, scripts, BOTs, as well as updating the processes docs to
-              BPMN standards and building PBI reports to track KPIs.
-            </p>
-          </WorkItem>
-          <WorkItem
-            title="IT Intern at Caterpillar Inc."
-            title_translation_reference="cat_title"
-            position_time="February 2020 - September 2021 (1 year 8 months)"
-            position_time_translation_reference="cat_year">
-            <p data-118n="cat_description">
-              Provided user support to create and publish PBI reports,
-              development of automation solutions using O365 (Power Apps, Power
-              Automate etc) and Automation Anywhere, documentation as-is and
-              to-be included (BPMN).
-            </p>
-          </WorkItem>
+            <WorkItem
+              title="IT Analyst at JLC Maintenance Services LTD"
+              title_translation_reference="jlc_analyst_title"
+              position_time="September 2021 - November 2023 (2 years 2 months)"
+              position_time_translation_reference="jlc_analyst_year">
+              <p data-118n="jlc_analyst_description">
+                Using mainly Python and PowerShell, I was in charge of
+                automating HR and charging processes. That includes development
+                of unit tests, scripts, BOTs, as well as updating the processes
+                docs to BPMN standards and building PBI reports to track KPIs.
+              </p>
+            </WorkItem>
+            <WorkItem
+              title="IT Intern at Caterpillar Inc."
+              title_translation_reference="cat_title"
+              position_time="February 2020 - September 2021 (1 year 8 months)"
+              position_time_translation_reference="cat_year">
+              <p data-118n="cat_description">
+                Provided user support to create and publish PBI reports,
+                development of automation solutions using O365 (Power Apps,
+                Power Automate etc) and Automation Anywhere, documentation as-is
+                and to-be included (BPMN).
+              </p>
+            </WorkItem>
           </div>
         </MainSection>
       </main>

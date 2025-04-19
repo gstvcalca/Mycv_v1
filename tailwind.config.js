@@ -19,6 +19,7 @@ export default {
       },
       backgroundImage: {
         "diagonal-stripes": "repeating-linear-gradient(-45deg, var(--bg-secondary), var(--bg-secondary) 2px, var(--bg-primary) 2px, var(--bg-primary) 5px)",
+        "grid": "url('./bg.png')"
       },
     },
     
