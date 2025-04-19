@@ -5,8 +5,8 @@ export function UkFlagSVG({className=""}: svgInterface) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 60 30"
-      width="1200"
-      height="600"
+      width="1000"
+      height="700"
       className={className}>
       <clipPath id="s">
         <path d="M0,0 v30 h60 v-30 z" />

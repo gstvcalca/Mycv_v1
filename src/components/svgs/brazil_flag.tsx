@@ -2,7 +2,7 @@ import { svgInterface } from "./svg_interface";
 
 export function BrazilFlagSVG({className=""}:svgInterface) {
   return (
-    <svg width="1000" height="700" viewBox="-2100 -1470 4200 2940" className={className}>
+    <svg width="1000" height="1400" viewBox="-2100 -1470 4200 2940" className={className}>
       <defs>
         <g id="G">
           <clipPath id="g">

@@ -13,14 +13,9 @@
   --bg-modal: rgba(0, 0, 0, 0.8);
 }
 
-svg {
-  width: 30px;
-  height: 38px;
-}
-
 @layer components {
   .border-bottom {
-    @apply border-b-[1px] border-solid border-white pb-2;
+    @apply border-b-[1px] border-solid border-border-color pb-2;
   }
 
   .small-icon-exp {

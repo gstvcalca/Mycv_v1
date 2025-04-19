@@ -3,7 +3,7 @@ import { svgInterface } from "./svg_interface";
 export function O365SVG({className=""}: svgInterface) {
   return (
     <svg id="image-2" fill="none" viewBox="4 2 40 44" className={className}>
-      <title>Microsoft 365 logo</title>
+      <title>Microsoft 365</title>
       <path
         d="M20.0842 3.02588L19.8595 3.16179C19.5021 3.37799 19.1654 3.61972 18.8512 3.88385L19.4993 3.42798H25L26 11L21 16L16 19.4754V23.4829C16 26.2819 17.4629 28.8774 19.8574 30.3268L25.1211 33.5129L14 40.0002H11.8551L7.85737 37.5804C5.46286 36.131 4 33.5355 4 30.7365V17.2606C4 14.4607 5.46379 11.8645 7.85952 10.4154L19.8595 3.15687C19.9339 3.11189 20.0088 3.06823 20.0842 3.02588Z"
         fill="url(#paint0_radial_2994_8373)"

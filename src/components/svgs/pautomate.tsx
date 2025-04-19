@@ -3,6 +3,7 @@ import { svgInterface } from "./svg_interface";
 export function PowerAutomateSVG({className=""}: svgInterface) {
   return (
     <svg width="96" height="96" viewBox="0 0 96 96" fill="none" className={className}>
+      <title>Power Automate</title>
       <defs>
         <filter id="filter0_f">
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
