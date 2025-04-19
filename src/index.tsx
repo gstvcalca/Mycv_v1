@@ -16,23 +16,58 @@ import { UkFlagSVG } from "./components/svgs/uk_flag";
 import { MapPin } from "lucide-react";
 
 export function MainPage() {
+  function setThemeVariables(){
+    const root = document.documentElement;
+    const defaultTheme = '#2c2c2c'
+    console.log(getComputedStyle(root).getPropertyValue("--bg-primary"));
+    if (
+      getComputedStyle(root).getPropertyValue("--bg-primary") ===
+      defaultTheme
+    ) {
+      root.style.setProperty("--text-primary", "rgb(50, 50, 50)");
+      root.style.setProperty("--text-secondary", "rgb(100, 100, 100)");
+      root.style.setProperty("--bg-primary", "rgb(250, 250, 250)");
+      root.style.setProperty("--bg-secondary", "rgb(240, 240, 240)");
+      root.style.setProperty("--border-color", "rgb(50, 50, 50)");
+      root.style.setProperty("--bg-gradient-start", "#464cf6");
+      root.style.setProperty("--bg-gradient-ent", "#77ccf4");
+      root.style.setProperty("--bg-modal", "rgba(0, 0, 0, 0.2)");
+    } else {
+      root.style.setProperty("--text-primary", "rgb(245, 245, 245)");
+      root.style.setProperty("--text-secondary", "#b3b3b3");
+      root.style.setProperty("--bg-primary", "#2c2c2c");
+      root.style.setProperty("--bg-secondary", "rgb(60, 60, 60)");
+      root.style.setProperty("--border-color", "white");
+      root.style.setProperty("--bg-gradient-start", "#464cf6");
+      root.style.setProperty("--bg-gradient-ent", "#77ccf4");
+      root.style.setProperty("--bg-modal", "rgba(0, 0, 0, 0.8)");
+    }
+  }
+
   return (
     <div>
       <main className="flex flex-col min-h-screen border-2 py-12 px-[8%] space-y-6 items-center justify-center bg-bg-primary text-text-primary">
-        <div className="toggle_div flex gap-6 m-2 items-center">
+        <div className="toggle_div flex gap-6 items-center justify-end w-full">
           <div className="switch_div flex gap-2 m-2 items-center">
             <span data-118n="dark">Dark</span>
-            <label className="switch">
-              <input type="checkbox" id="toggle_theme" />
-              <span className="slider"></span>
+            <label className="switch w-10 h-5 relative flex items-center">
+              <input
+                onChange={setThemeVariables}
+                type="checkbox"
+                className="peer opacity-0 w-0 h-0 checked:transition checked:duration-300 checked:translate-x-6"
+              />
+              <span className="slider flex absolute cursor-pointer inset-0 bg-text-primary rounded-xl transition duration-300 before:relative before:content-[''] before:w-5 before:h-5 before:bg-bg-secondary before:border-[1px] before:border-text-primary before:rounded-full before:box-border peer-checked:before:translate-x-6 before:transition before:duration-300"></span>
             </label>
             <span data-118n="light">Light</span>
           </div>
           <div className="switch_div flex items-center gap-2">
             <UkFlagSVG />
-            <label className="switch">
-              <input type="checkbox" id="toggle_language" />
-              <span className="language_slider"></span>
+            <label className="switch w-10 h-5 relative flex items-center">
+              <input
+                type="checkbox"
+                className="peer opacity-0 w-0 h-0 checked:transition checked:duration-300 checked:translate-x-6"
+              />
+              <span className="slider flex absolute cursor-pointer inset-0 bg-text-primary rounded-xl transition duration-300 before:relative before:content-[''] before:w-5 before:h-5 before:bg-bg-secondary before:border-[1px] before:border-text-primary before:rounded-full before:box-border peer-checked:before:translate-x-6 before:transition before:duration-300"></span>
             </label>
             <BrazilFlagSVG />
           </div>
@@ -42,7 +77,7 @@ export function MainPage() {
             <div className="header-description flex gap-6">
               <div className="w-fit">
                 <img
-                  src="IMG_2081.jpg"
+                  src="./IMG_2081.jpg"
                   className="size-56 rounded-full border-white border-solid border-[1px]"
                 />
               </div>
@@ -87,17 +122,17 @@ export function MainPage() {
             </div>
             <div className="experience_div my-2 flex-col w-fit gap-1 flex">
               <ExperienceItem
-                svgElement={<ReactSVG className="size-9"/>}
+                svgElement={<ReactSVG className="size-9" />}
                 title="Learning experience"
                 years={1}
               />
               <ExperienceItem
-                svgElement={<PythonSVG className="size-9"/>}
+                svgElement={<PythonSVG className="size-9" />}
                 title="Python 3.9"
                 years={2}
               />
               <ExperienceItem
-                svgElement={<PowerShellSVG className="size-9"/>}
+                svgElement={<PowerShellSVG className="size-9" />}
                 title="PowerShell"
                 years={2}
               />
