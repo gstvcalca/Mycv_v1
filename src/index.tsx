@@ -19,6 +19,8 @@ import { InfoSection } from "./components/info_section";
 import { MainSection } from "./components/main_section";
 import { PortfolioItem } from "./components/portfolio_item";
 import { WorkItem } from "./components/work_item";
+import { WorkItemMultiple } from "./components/work_item_multiple";
+import { WorkItemPlain } from "./components/work_item_plain";
 
 export function MainPage() {
   function setThemeVariables() {
@@ -61,12 +63,14 @@ export function MainPage() {
       years: "years",
       education: "Education",
       bachelor: "Bachelor in Computer Engineering",
-      eep: "Engineering University of Piracicaba, Brazil",
+      eep: "Engineering University of Piracicaba",
       certification: "Certification",
-      planner_description:
-        "This project is an adaptation from the 2024 Next Level Week event hosted by Rocketseat. After a few changes and improvements it became my frontend project for the Web Development course I'm taking at Laneway Education.",
+      planner_description_1:
+        "This project is an adaptation from the 2024 Next Level Week event hosted by",
+      planner_description_2:
+        ". After a few changes and improvements it became my frontend project for the Web Development course I'm taking at Laneway Education.",
       caputteeno_description:
-        "This project is a challenge released by Rocketseat and done with the help of @kipper.dev :)",
+        "This project is a challenge released by Rocketseat and done with the help of",
       "work experience": "Work experience",
       jlc_analyst_title: "IT Analyst at JLC maintenance services LTD",
       jlc_analyst_year: "September 2021 - November 2023 (2 years 2 months)",
@@ -84,6 +88,17 @@ export function MainPage() {
       prdo_description:
         "This was the main project I did at JLC. Using Python, PowerShell and Power BI, I automated a billing proccess that used to take almost two days each week of an HR employee.",
       unset: "",
+      diploma_web: "Diploma IV in Web Development",
+      jlc_technician_title: "Administrative Technician at JLC maintenance services LTD",
+      jlc_technician_description: "Responsible for purchasing materials on demand, elaboration of administrative procedures, control of hours performed and payroll, personal documents, work orders (daily work report), accounts payable and receivable, documents related to health and safety (PPRA, PCMSO, etc.) and hiring processes.",
+      jlc_technician_years: "February 2017 - January 2020 (3 years)",
+      ampi_assistant_title: "Administrative assistant",
+      ampi_assistant_description: "Mainly using SAP and MS-Excel, I was responsible for building processes related to the registration, purchase and repair of maintenance materials, tracking of maintenance costs, maintenance plan and work orders.",
+      ampi_assistant_years: "August 2014 - May 2016 (1 year 10 months)",
+      ampi_intern_description: "Daily to yearly tracking of hydraulics systems' levels & administrative procedures related to purchasing and repairing of maintenance materials using SAP.",
+      ampi_intern_title: "Intern",
+      ampi_intern_years: "April 2014 - August 2014 (1 year 5 months)",
+      brazil: ", Brazil"
     },
     ptbr: {
       languages: "Idiomas",
@@ -95,12 +110,14 @@ export function MainPage() {
       years: "anos",
       education: "Formação",
       bachelor: "Bacharel em Engenharia da Computação",
-      eep: "Escola de Engenharia de Piracicaba, Brasil",
+      eep: "Escola de Engenharia de Piracicaba",
       certification: "Certificados",
-      planner_description:
-        "Este projeto é uma adaptação do evento Next Level Week 2024, promovido pela Rocketseat. Após algumas mudanças e melhorias, ele se tornou meu projeto de frontend para o curso de Desenvolvimento Web que estou fazendo na Laneway Education.",
+      planner_description_1:
+        "Este projeto é uma adaptação do evento Next Level Week 2024, promovido pela",
+      planner_description_2:
+        ". Após algumas mudanças e melhorias, ele se tornou meu projeto de frontend para o curso de Desenvolvimento Web que estou fazendo na Laneway Education.",
       caputteeno_description:
-        "Este projeto é um desafio lançado pela Rocketseat e feito com a ajuda de @kipper.dev :)",
+        "Este projeto é um desafio lançado pela Rocketseat e feito com a ajuda da",
       "work experience": "Experiência",
       jlc_analyst_title: "Analista de TI na JLC Serviços de Manutenção",
       jlc_analyst_year: "Setembro 2021 - Novembro 2023 (2 anos e 2 meses)",
@@ -118,6 +135,17 @@ export function MainPage() {
       prdo_description:
         "Este foi o meu principal projeto na JLC. Utilizando Python, PowerShell e Power BI, eu automatizei um processo de cobrança que antes tomava quase dois dias por semana de um funcionário do RH.",
       unset: "",
+      diploma_web: "Diploma IV em Desenvolvimento Web",
+      jlc_technician_title: "Técnico administrativo na JLC Serviços de manutenção LTDA",
+      jlc_technician_description: "Responsável pela compra de materiais sob demanda, elaboração de procedimentos administrativos, controle de horas realizadas e pagamento, ordens de serviço, documentos pessoais, contas a pagar e receber, documentos de saúde e segurança (PPRA, PCMSO, etc.) e admissão de funcionários.",
+      jlc_technician_years: "Fevereiro 2017 - Janeiro 2020 (3 years)",
+      ampi_assistant_title: "Assistente administrativo",
+      ampi_assistant_description: "Utilizando principalmente SAP e Excel, eu era responsável pelo cadastro, compra e reparo de materiais de manutenção, acompanhamento de custos, planos e ordens de manutenção. Também era encarregado de atualizar e apresentar os relatórios semanais de indicadores de resultados (KPIs) de manutenção.",
+      ampi_assistant_years: "Agosto 2014 - Maio 2016 (1 ano 10 meses)",
+      ampi_intern_description: "Acompanhamento diário, semanal e anual do nível de sistemas hidráulicos e rotinas administrativas relacionadas à compra e reforma de materiais de manutenção utilzando SAP.",
+      ampi_intern_title: "Estagiário",
+      ampi_intern_years: "Abril 2014 - Agosto 2014 (1 ano 5 meses)",
+      brazil: ", Brasil"
     },
   };
 
@@ -257,16 +285,32 @@ export function MainPage() {
               </div>
             </InfoSection>
             <InfoSection title="education">
-              <div className="border-l-2 border-border-color border-solid pl-2 py-1">
+              <div className="border-l-2 border-border-color border-solid pl-2 py-1 gap-2 items-center">
                 <p
                   className="education-title font-semibold mr-1"
                   data-118n="bachelor">
                   Bachelor in Computer Engineering
                 </p>
-                <p data-118n="eep">
-                  Engineering University of Piracicaba, Brazil
-                </p>
+                <a
+                  data-118n="eep"
+                  className="underline underline-offset-2"
+                  href="https://www.eep.br/">
+                  Engineering University of Piracicaba 
+                </a><span data-118n="brazil">, Brazil</span>
                 <p className="text-text-secondary text-sm">2017 – 2021</p>
+              </div>
+              <div className="border-l-2 border-border-color border-solid pl-2 py-1 gap-2 items-center">
+                <p
+                  className="education-title font-semibold mr-1"
+                  data-118n="diploma_web">
+                  Diploma IV in Web Development
+                </p>
+                <a
+                  className="underline underline-offset-2"
+                  href="https://laneway.edu.au/">
+                  Laneway Education
+                </a><span>, Sydney</span>
+                <p className="text-text-secondary text-sm">2024 – 2025</p>
               </div>
             </InfoSection>
             <InfoSection title="certification">
@@ -286,25 +330,33 @@ export function MainPage() {
               title="Plann.er"
               href="/planner"
               img_url="./planner_thumbnail.png">
-              <p data-118n="planner_description">
-                This project is an adaptation from the 2024 Next Level Week
-                event hosted by Rocketseat. After a few changes and improvements
-                it became my frontend project for the Web Development course I'm
-                taking at Laneway Education.
+              <p>
+                <span data-118n="planner_description_1">This project is an adaptation from the 2024 Next Level Week
+                event hosted by</span>
+                <a
+                  href="https://app.rocketseat.com.br/?type=ALL"
+                  className="underline underline-offset-2 ml-1">
+                  Rocketseat
+                </a>
+                <span data-118n="planner_description_2">. After a few changes and improvements it became my frontend
+                project for the Web Development course I'm taking at Laneway
+                Education.</span>
               </p>
             </PortfolioItem>
             <PortfolioItem
               title="caputteeno"
               href="/caputteeno"
               img_url="./caputteeno_thumbnail.png">
-              <p data-118n="caputteeno_description">
+              <span data-118n="caputteeno_description">
                 This project is a challenge released by Rocketseat and done with
                 the help of
-                <a href="https://www.instagram.com/kipper.dev/">
-                  @kipper.dev
-                </a>{" "}
-                :)
-              </p>
+              </span>
+              <a
+                href="https://www.instagram.com/kipper.dev/"
+                className="underline px-1">
+                @kipper.dev
+              </a>
+              <span>:)</span>
             </PortfolioItem>
             <PortfolioItem
               title="ArcelorMittal Portal RDO"
@@ -321,10 +373,11 @@ export function MainPage() {
         <MainSection title="work experience">
           <div className="flex flex-col gap-5">
             <WorkItem
-              title="IT Analyst at JLC Maintenance Services LTD"
+              title="IT Analyst at JLC maintenance services LTD"
               title_translation_reference="jlc_analyst_title"
               position_time="September 2021 - November 2023 (2 years 2 months)"
-              position_time_translation_reference="jlc_analyst_year">
+              position_time_translation_reference="jlc_analyst_year"
+              img_url="./jlc.png">
               <p data-118n="jlc_analyst_description">
                 Using mainly Python and PowerShell, I was in charge of
                 automating HR and charging processes. That includes development
@@ -336,7 +389,9 @@ export function MainPage() {
               title="IT Intern at Caterpillar Inc."
               title_translation_reference="cat_title"
               position_time="February 2020 - September 2021 (1 year 8 months)"
-              position_time_translation_reference="cat_year">
+              position_time_translation_reference="cat_year"
+              img_url="./cat.svg"
+              link_url="https://www.linkedin.com/company/caterpillar-inc/posts/?feedView=all">
               <p data-118n="cat_description">
                 Provided user support to create and publish PBI reports,
                 development of automation solutions using O365 (Power Apps,
@@ -344,6 +399,54 @@ export function MainPage() {
                 and to-be included (BPMN).
               </p>
             </WorkItem>
+            <WorkItem
+              title="Administrative Technician at JLC maintenance services LTD"
+              title_translation_reference="jlc_technician_title"
+              position_time="February 2017 - January 2020 (3 years)"
+              position_time_translation_reference="jlc_technician_years"
+              img_url="./jlc.png">
+              <p data-118n="jlc_technician_description">
+                Responsible for purchasing materials on demand, elaboration of
+                administrative procedures, control of hours performed
+                and payroll, personal documents, work orders (daily work
+                report), accounts payable and receivable, documents related to
+                health and safety (PPRA, PCMSO, etc.) and hiring processes.
+              </p>
+            </WorkItem>
+            <WorkItemMultiple
+              img_url="./arcelormittal.svg"
+              link_url="https://www.linkedin.com/company/arcelormittal-brasil/posts/?feedView=all"
+              company="ArcelorMittal">
+              <WorkItemPlain
+                title="Administrative assistant"
+                title_translation_reference="ampi_assistant_title"
+                position_time="August 2014 - May 2016 (1 year 10 months)"
+                position_time_translation_reference="ampi_assistant_years"
+                img_url="./arcelormittal.svg"
+                link_url="https://www.linkedin.com/company/arcelormittal-brasil/posts/?feedView=all">
+                <p data-118n="ampi_assistant_description">
+                  Mainly using SAP and MS-Excel, I was responsible for building
+                  and presenting a weekly result reports (KPIs), administrative
+                  processes related to the registration, purchase and repair of
+                  maintenance materials, tracking of maintenance costs,
+                  maintenance plan and work orders.
+                </p>
+              </WorkItemPlain>
+              <div className="h-px w-full border-border-color border-[1px] my-5 box-border" />
+              <WorkItemPlain
+                title="Intern"
+                title_translation_reference="ampi_intern_title"
+                position_time="April 2014 - August 2014 (1 year 5 months)"
+                position_time_translation_reference="ampi_intern_years"
+                img_url="./arcelormittal.svg"
+                link_url="https://www.linkedin.com/company/arcelormittal-brasil/posts/?feedView=all">
+                <p data-118n="ampi_intern_description">
+                  Daily to yearly tracking of hydraulics systems' levels &
+                  administrative procedures related to purchasing and repairing
+                  of maintenance materials using SAP.
+                </p>
+              </WorkItemPlain>
+            </WorkItemMultiple>
           </div>
         </MainSection>
       </main>
