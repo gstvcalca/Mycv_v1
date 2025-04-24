@@ -1,0 +1,104 @@
+{"jsonTranslations": {
+  "en": {
+    "languages": "Languages",
+    "fluent": "Fluent",
+    "native_speaker": "Native speaker",
+    "greeting": "Hi, I'm Gustavo 👋",
+    "position": "Software developer",
+    "year": "year",
+    "years": "years",
+    "education": "Education",
+    "bachelor": "Bachelor in Computer Engineering",
+    "eep": "Engineering University of Piracicaba",
+    "certification": "Certification",
+    "planner_description_1":
+      "This project is an adaptation from the 2024 Next Level Week event hosted by",
+    "planner_description_2":
+      ". After a few changes and improvements it became my frontend project for the Web Development course I'm taking at Laneway Education.",
+    "caputteeno_description":
+      "This project is a challenge released by Rocketseat and done with the help of",
+    "work experience": "Work experience",
+    "jlc_analyst_title": "IT Analyst at JLC maintenance services LTD",
+    "jlc_analyst_year": "September 2021 - November 2023 (2 years 2 months)",
+    "jlc_analyst_description":
+      "Using mainly Python and PowerShell, I was in charge of automating HR and charging processes. That includes development of unit tests, scripts, BOTs, as well as updating the processes docs to BPMN standards and building PBI reports to track KPIs.",
+    "cat_title": "IT Intern at Caterpillar Inc.",
+    "cat_year": "February 2020 - September 2021 (1 year 8 months)",
+    "cat_description":
+      "Provided user support to create and publish PBI reports, development of automation solutions using O365 (Power Apps, Power Automate etc) and Automation Anywhere, documentation as-is and to-be included (BPMN).",
+    "modal_greeting": "Hello there,",
+    "modal_description":
+      "I really appreciate your curiosity to see the projects I've developed. This is a friendly reminder that they are hosted on two free platforms called Vercel (frontend) and Render (backend). The backend usually takes 2 minutes to start answering requests for the first time after being idle for a few minutes. So, please, open the link, wait for two minutes and refresh the page, then everything should be working properly. Thank you!",
+    "go_to_vercel": "Go to vercel",
+    "portfolio": "Portfolio",
+    "prdo_description":
+      "This was the main project I did at JLC. Using Python, PowerShell and Power BI, I automated a billing proccess that used to take almost two days each week of an HR employee.",
+    "unset": "",
+    "diploma_web": "Diploma IV in Web Development",
+    "jlc_technician_title":
+      "Administrative Technician at JLC maintenance services LTD",
+    "jlc_technician_description":
+      "Responsible for purchasing materials on demand, elaboration of administrative procedures, control of hours performed and payroll, personal documents, work orders (daily work report), accounts payable and receivable, documents related to health and safety (PPRA, PCMSO, etc.) and hiring processes.",
+    "jlc_technician_years": "February 2017 - January 2020 (3 years)",
+    "ampi_assistant_title": "Administrative assistant",
+    "ampi_assistant_description":
+      "Mainly using SAP and MS-Excel, I was responsible for building processes related to the registration, purchase and repair of maintenance materials, tracking of maintenance costs, maintenance plan and work orders.",
+    "ampi_assistant_years": "August 2014 - May 2016 (1 year 10 months)",
+    "ampi_intern_description":
+      "Daily to yearly tracking of hydraulics systems' levels & administrative procedures related to purchasing and repairing of maintenance materials using SAP.",
+    "ampi_intern_title": "Intern",
+    "ampi_intern_years": "April 2014 - August 2014 (1 year 5 months)",
+    "brazil": ", Brazil"
+  },
+  "ptbr": {
+    "languages": "Idiomas",
+    "fluent": "Fluente",
+    "native_speaker": "Nativo",
+    "greeting": "Olá, eu sou Gustavo 👋",
+    "position": "Desenvolvedor",
+    "year": "ano",
+    "years": "anos",
+    "education": "Formação",
+    "bachelor": "Bacharel em Engenharia da Computação",
+    "eep": "Escola de Engenharia de Piracicaba",
+    "certification": "Certificados",
+    "planner_description_1":
+      "Este projeto é uma adaptação do evento Next Level Week 2024, promovido pela",
+    "planner_description_2":
+      ". Após algumas mudanças e melhorias, ele se tornou meu projeto de frontend para o curso de Desenvolvimento Web que estou fazendo na Laneway Education.",
+    "caputteeno_description":
+      "Este projeto é um desafio lançado pela Rocketseat e feito com a ajuda da",
+    "work experience": "Experiência",
+    "jlc_analyst_title": "Analista de TI na JLC Serviços de Manutenção",
+    "jlc_analyst_year": "Setembro 2021 - Novembro 2023 (2 anos e 2 meses)",
+    "jlc_analyst_description":
+      "Utilizando principalmente Python e PowerShell, fui responsável por automatizar processos de RH e de faturamento. Isto inclui desde o mapeamento dos processos utilizando padrões BPMN, desenvolvimento dos scripts e testes unitários, e também a criação de relatórios para acompanhamento das principais métricas (KPIs) utilizando Power BI.",
+    "cat_title": "Estagiário de TI na Caterpillar Inc.",
+    "cat_year": "Fevereiro 2020 - Setembro 2021 (1 ano 8 meses)",
+    "cat_description":
+      "Suporte ao cliente de diversas áreas da empresa no desenvolvimento e publicação de relatórios Power BI, bem como o desenvolvimento de soluções de automação utilizando a plataforma Office 365 - Power Apps, Power Automate (Web & Desktop) e Automation Anywhere. Documentação de processos antes (as-is) e depois (to-be) utilzando os padrões BPMN.",
+    "modal_greeting": "Olá,",
+    "modal_description":
+      "Fico feliz que tenha curiosidade pelos projetos que desenvolvi. Este é apenas um aviso que eles estão hospedados em duas plataformas gratuitas, Vercel para o Frontend, e Render para o Backend. Esta última normalmente demora 2 minutos para começar a responder solicitações depois de alguns minutos de inatividade. Então, por favor, acesse o link, espere dois minutos e recarregue a página, e tudo deverá funcionar normalmente. Obrigado.",
+    "go_to_vercel": "Ir para a Vercel",
+    "portfolio": "Portfólio",
+    "prdo_description":
+      "Este foi o meu principal projeto na JLC. Utilizando Python, PowerShell e Power BI, eu automatizei um processo de cobrança que antes tomava quase dois dias por semana de um funcionário do RH.",
+    "unset": "",
+    "diploma_web": "Diploma IV em Desenvolvimento Web",
+    "jlc_technician_title":
+      "Técnico administrativo na JLC Serviços de manutenção LTDA",
+    "jlc_technician_description":
+      "Responsável pela compra de materiais sob demanda, elaboração de procedimentos administrativos, controle de horas realizadas e pagamento, ordens de serviço, documentos pessoais, contas a pagar e receber, documentos de saúde e segurança (PPRA, PCMSO, etc.) e admissão de funcionários.",
+    "jlc_technician_years": "Fevereiro 2017 - Janeiro 2020 (3 years)",
+    "ampi_assistant_title": "Assistente administrativo",
+    "ampi_assistant_description":
+      "Utilizando principalmente SAP e Excel, eu era responsável pelo cadastro, compra e reparo de materiais de manutenção, acompanhamento de custos, planos e ordens de manutenção. Também era encarregado de atualizar e apresentar os relatórios semanais de indicadores de resultados (KPIs) de manutenção.",
+    "ampi_assistant_years": "Agosto 2014 - Maio 2016 (1 ano 10 meses)",
+    "ampi_intern_description":
+      "Acompanhamento diário, semanal e anual do nível de sistemas hidráulicos e rotinas administrativas relacionadas à compra e reforma de materiais de manutenção utilzando SAP.",
+    "ampi_intern_title": "Estagiário",
+    "ampi_intern_years": "Abril 2014 - Agosto 2014 (1 ano 5 meses)",
+    "brazil": ", Brasil"
+  }}
+}
