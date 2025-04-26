@@ -1,11 +1,12 @@
 import { MainSection } from "./main_section";
 import { PortfolioItem } from "./portfolio_item";
+import { PortfolioItemWithModal } from "./portfolio_item_with_modal";
 
 export function Portfolio() {
   return (
     <MainSection title="portfolio">
       <div className="portfolio_gallery flex gap-3 flex-col lg:flex-row">
-        <PortfolioItem
+        <PortfolioItemWithModal
           title="Plann.er"
           href="/planner"
           img_url="./planner_thumbnail.png">
@@ -25,10 +26,10 @@ export function Portfolio() {
               Education.
             </span>
           </p>
-        </PortfolioItem>
-        <PortfolioItem
+        </PortfolioItemWithModal>
+        <PortfolioItemWithModal
           title="caputteeno"
-          href="https://computer-force.vercel.app/"
+          href="/caputteeno"
           img_url="./caputteeno_thumbnail.png">
           <span data-118n="caputteeno_description">
             This project is a challenge released by Rocketseat and done with the
@@ -40,7 +41,7 @@ export function Portfolio() {
             @kipper.dev
           </a>
           <span>:)</span>
-        </PortfolioItem>
+        </PortfolioItemWithModal>
         <PortfolioItem
           title="ArcelorMittal Portal RDO"
           href="/prdo"
