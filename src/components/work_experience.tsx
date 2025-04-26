@@ -8,17 +8,40 @@ export function WorkExperience() {
     <MainSection title="work experience">
       <div className="flex flex-col gap-5">
         <WorkItem
+          title="Part-time Web Developer at Sponge Agency"
+          title_translation_reference="sponge_title"
+          position_time="February 2025 - Current"
+          position_time_translation_reference="sponge_years"
+          img_url="./sponge.png"
+          link_url="https://www.spongeagency.com.au/">
+          <p data-118n="sponge_description">
+            Project based role working with Sponge Agency’s Brazil based client
+            portfolio, providing web development, automation programing, digital
+            and data support.
+          </p>
+        </WorkItem>
+        <WorkItem
           title="IT Analyst at JLC maintenance services LTD"
           title_translation_reference="jlc_analyst_title"
           position_time="September 2021 - November 2023 (2 years 2 months)"
           position_time_translation_reference="jlc_analyst_year"
           img_url="./jlc.png">
-          <p data-118n="jlc_analyst_description">
-            Using mainly Python and PowerShell, I was in charge of automating HR
-            and charging processes. That includes development of unit tests,
-            scripts, BOTs, as well as updating the processes docs to BPMN
-            standards and building PBI reports to track KPIs.
-          </p>
+          <ul className="list-disc list-inside">
+            <li data-118n="jlc_analyst_d1">
+              Automated a monthly billing workflow for 20+ employees by
+              developing a Python BOT, PowerShell scripts, and a Power BI
+              report, cutting manual processing time by 75% and eliminating
+              data-entry errors;
+            </li>
+            <li data-118n="jlc_analyst_d2">
+              Automated the monthly payroll mailing for the company (40
+              employees);
+            </li>
+            <li data-118n="jlc_analyst_d3">
+              Automated the verification and renewal of WHS documents of the
+              company (40 employees) by creating VBA Scripts and a PBI report.
+            </li>
+          </ul>
         </WorkItem>
         <WorkItem
           title="IT Intern at Caterpillar Inc."
@@ -27,12 +50,23 @@ export function WorkExperience() {
           position_time_translation_reference="cat_year"
           img_url="./cat.svg"
           link_url="https://www.linkedin.com/company/caterpillar-inc/posts/?feedView=all">
-          <p data-118n="cat_description">
-            Provided user support to create and publish PBI reports, development
-            of automation solutions using O365 (Power Apps, Power Automate etc)
-            and Automation Anywhere, documentation as-is and to-be included
-            (BPMN).
-          </p>
+          <ul className="list-disc list-inside">
+            <li data-118n="cat_d1">
+              Collaborated with cross-functional teams to develop two Automation
+              Anywhere BOTs
+            </li>
+            <li data-118n="cat_d2">
+              Handled code review tasks for development and maintenance of
+              Automation Anywhere BOTs
+            </li>
+            <li data-118n="cat_d3">
+              Developed a Power App to handle internal requests to the IT team
+            </li>
+            <li data-118n="cat_d4">
+              Provided user support to create and publish PBI reports as well as
+              to collaborate using O365 tools
+            </li>
+          </ul>
         </WorkItem>
         <WorkItem
           title="Administrative Technician at JLC maintenance services LTD"
@@ -44,8 +78,8 @@ export function WorkExperience() {
             Responsible for purchasing materials on demand, elaboration of
             administrative procedures, control of hours performed and payroll,
             personal documents, work orders (daily work report), accounts
-            payable and receivable, documents related to health and safety
-            (PPRA, PCMSO, etc.) and hiring processes.
+            payable and receivable, documents related to WHS (PPRA, PCMSO, etc.)
+            and hiring processes.
           </p>
         </WorkItem>
         <WorkItemMultiple

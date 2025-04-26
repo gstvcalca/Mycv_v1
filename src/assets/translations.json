@@ -20,12 +20,16 @@
     "work experience": "Work experience",
     "jlc_analyst_title": "IT Analyst at JLC maintenance services LTD",
     "jlc_analyst_year": "September 2021 - November 2023 (2 years 2 months)",
-    "jlc_analyst_description":
-      "Using mainly Python and PowerShell, I was in charge of automating HR and charging processes. That includes development of unit tests, scripts, BOTs, as well as updating the processes docs to BPMN standards and building PBI reports to track KPIs.",
+    "jlc_analyst_d1":
+      "Automated a monthly billing workflow for 20+ employees by developing a Python BOT, PowerShell scripts, and a Power BI report, cutting manual processing time by 75% and eliminating data-entry errors;",
+    "jlc_analyst_d2": "Automated the monthly payroll mailing for the company (40 employees);",
+    "jlc_analyst_d3": "Automated the verification and renewal of WHS documents of the company (40 employees) by creating VBA Scripts and a PBI report.",
     "cat_title": "IT Intern at Caterpillar Inc.",
     "cat_year": "February 2020 - September 2021 (1 year 8 months)",
-    "cat_description":
-      "Provided user support to create and publish PBI reports, development of automation solutions using O365 (Power Apps, Power Automate etc) and Automation Anywhere, documentation as-is and to-be included (BPMN).",
+    "cat_d1": "Collaborated with cross-functional teams to develop two Automation Anywhere BOTs;",
+    "cat_d2": "Handled code review tasks for development and maintenance of Automation Anywhere BOTs",
+    "cat_d3": "Developed a Power App to handle internal requests to the IT team",
+    "cat_d4": "Provided user support to create and publish PBI reports as well as to collaborate using O365 tools",
     "modal_greeting": "Hello there,",
     "modal_description":
       "I really appreciate your curiosity to see the projects I've developed. This is a friendly reminder that they are hosted on two free platforms called Vercel (frontend) and Render (backend). The backend usually takes 2 minutes to start answering requests for the first time after being idle for a few minutes. So, please, open the link, wait for two minutes and refresh the page, then everything should be working properly. Thank you!",
@@ -71,12 +75,16 @@
     "work experience": "Experiência",
     "jlc_analyst_title": "Analista de TI na JLC Serviços de Manutenção",
     "jlc_analyst_year": "Setembro 2021 - Novembro 2023 (2 anos e 2 meses)",
-    "jlc_analyst_description":
-      "Utilizando principalmente Python e PowerShell, fui responsável por automatizar processos de RH e de faturamento. Isto inclui desde o mapeamento dos processos utilizando padrões BPMN, desenvolvimento dos scripts e testes unitários, e também a criação de relatórios para acompanhamento das principais métricas (KPIs) utilizando Power BI.",
+    "jlc_analyst_d1":
+    "Automatizei um processo mensal de cobrança de 20+ funcionários desenvolvendo um BOT Python, scripts PowerShell, e um relatório Power BI, reduzindo o tempo de processamento manual em 75% e eliminando erros de digitação;",
+  "jlc_analyst_d2": "Automatizei o envio mensal da folha de pagamento da empresa (40 funcionários);",
+  "jlc_analyst_d3": "Automatizei a verificação e renovação de documentos de saúde e segurança do trabalho da empresa (40 funcionários) através do desenvolvimento de scripts VBA e um relatório PBI.",
     "cat_title": "Estagiário de TI na Caterpillar Inc.",
     "cat_year": "Fevereiro 2020 - Setembro 2021 (1 ano 8 meses)",
-    "cat_description":
-      "Suporte ao cliente de diversas áreas da empresa no desenvolvimento e publicação de relatórios Power BI, bem como o desenvolvimento de soluções de automação utilizando a plataforma Office 365 - Power Apps, Power Automate (Web & Desktop) e Automation Anywhere. Documentação de processos antes (as-is) e depois (to-be) utilzando os padrões BPMN.",
+    "cat_d1": "Em colaboração com equipes multifuncionais, desenvolvemos dois BOTs no Automation Anywhere;",
+    "cat_d2": "Realizei tarefas de revisão de código para desenvolvimento e manutenção de BOTs no Automation Anywhere;",
+    "cat_d3": "Desenvolvi um Power App para gerenciar solicitações internas para a equipe de TI;",
+    "cat_d4": "Prestei suporte aos usuários para criação e publicação de relatórios no Power BI, além de colaboração utilizando ferramentas do O365.",
     "modal_greeting": "Olá,",
     "modal_description":
       "Fico feliz que tenha curiosidade pelos projetos que desenvolvi. Este é apenas um aviso que eles estão hospedados em duas plataformas gratuitas, Vercel para o Frontend, e Render para o Backend. Esta última normalmente demora 2 minutos para começar a responder solicitações depois de alguns minutos de inatividade. Então, por favor, acesse o link, espere dois minutos e recarregue a página, e tudo deverá funcionar normalmente. Obrigado.",

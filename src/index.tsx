@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 import { ToggleComponents } from "./components/toggle_components";
 import { ProfileImage } from "./components/profile_img";
 import { HeaderAndSocial } from "./components/header_and_social";
@@ -7,7 +7,7 @@ import { InfoPanel } from "./components/info_panel";
 import { WorkExperience } from "./components/work_experience";
 import { Portfolio } from "./components/portfolio";
 import { jsonTranslations } from "./assets/translations.json";
-import { X } from "lucide-react";
+
 
 export function MainPage() {
   function setThemeVariables() {
@@ -55,20 +55,10 @@ export function MainPage() {
   }
 
   const translations: Record<string, Record<string, string>> = jsonTranslations;
-  const [isModalOpen, setModalState] = useState(false);
-
-  function closeModal(){
-    setModalState(false);
-  }
-  
-  function openModal(){
-    setModalState(true);
-  }
-
 
   return (
     <div>
-      <main className="flex flex-col min-h-screen border-2 py-12 px-[6%] pt-[0.5%] space-y-6 items-center justify-center bg-bg-primary text-text-primary relative">
+      <main className="flex flex-col min-h-screen border-2 py-12 px-[6%] pt-[0.5%] space-y-6 items-center justify-center bg-bg-primary text-text-primary relative text-lg">
         <ToggleComponents
           changeLanguage={changeLanguage}
           setThemeVariables={setThemeVariables}
