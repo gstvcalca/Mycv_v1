@@ -41,7 +41,7 @@ export function WorkExperience() {
           position_time="September 2021 - November 2023 (2 years 2 months)"
           position_time_translation_reference="jlc_analyst_year"
           img_url="./jlc.png"
-          tags={[<PythonTag/>, <PowerShellTag/>, <PowerBITag/>]}>
+          tags={[<PythonTag/>, <PowerShellTag/>, <PowerBITag/>, <VBATag/>]}>
           <ul className="list-disc list-inside">
             <li data-118n="jlc_analyst_d1">
               Automated a monthly billing workflow for 20+ employees by
