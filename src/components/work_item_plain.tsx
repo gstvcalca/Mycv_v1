@@ -8,6 +8,7 @@ interface WorkItemProps {
   position_time_translation_reference: string;
   img_url: string;
   link_url?: string;
+  tags?: ReactNode[];
 }
 
 export function WorkItemPlain({
@@ -16,15 +17,19 @@ export function WorkItemPlain({
   title_translation_reference,
   position_time,
   position_time_translation_reference,
+  tags,
 }: WorkItemProps) {
   return (
     <div className="flex items-start gap-2 flex-col pl-3">
       <div>
-        <h3
-          data-118n={title_translation_reference}
-          className="text-xl font-semibold">
-          {title}
-        </h3>
+        <div className="flex items-center">
+          <h3
+            data-118n={title_translation_reference}
+            className="text-xl font-semibold mr-2">
+            {title}
+          </h3>
+          {tags}
+        </div>
         <span
           data-118n={position_time_translation_reference}
           className="text-text-secondary">
