@@ -28,7 +28,7 @@ export function PortfolioItemWithModal({
       <div className="p-4 text-justify">{children}</div>
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center my-0 text-text-primary backdrop-blur-sm">
-        <div className="w-1/2 border-border-color border-[1px] flex flex-col rounded-xl p-5 gap-5 bg-bg-primary">
+        <div className="w-[90%] sm:w-1/2 border-border-color border-[1px] flex flex-col rounded-xl p-5 gap-5 bg-bg-primary text-sm sm:text-base">
           <div className="flex justify-between">
             <p>Hello There,</p>
             <button onClick={() => setModalState(false)}>

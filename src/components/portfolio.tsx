@@ -29,7 +29,7 @@ export function Portfolio() {
         </PortfolioItemWithModal>
         <PortfolioItemWithModal
           title="caputteeno"
-          href="/caputteeno"
+          href="https://computer-force.vercel.app/"
           img_url="./caputteeno_thumbnail.png">
           <span data-118n="caputteeno_description">
             This project is a challenge released by Rocketseat and done with the

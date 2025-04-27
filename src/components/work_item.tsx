@@ -26,7 +26,7 @@ export function WorkItem({
 
   return (
     <div className="work_item border-[1px] border-border-color rounded-xl p-3 text-justify bg-diagonal-stripes">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 flex-col md:flex-row">
         {link_url ? (
           <a href={link_url} target="_blank">
             {ImgElement}
@@ -35,7 +35,7 @@ export function WorkItem({
           ImgElement
         )}
         <div>
-          <div className="flex items-center">
+          <div className="flex items-center flex-col md:flex-row">
             <h3
               data-118n={title_translation_reference}
               className="text-xl font-semibold mr-2">

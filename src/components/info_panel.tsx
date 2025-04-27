@@ -6,7 +6,7 @@ export function InfoPanel() {
   return (
     <div className="right-side flex flex-col gap-7 p-2">
       <InfoSection title="languages">
-        <div className="languages_info flex w-2/3 lg:w-full justify-center items-center lg:items-start flex-col gap-1 ">
+        <div className="languages_info flex w-full justify-center items-center lg:items-start flex-col gap-1 ">
           <div className="language_item flex items-center gap-2">
             <UkFlagSVG className="size-8" />
             <div>

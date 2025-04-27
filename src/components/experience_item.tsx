@@ -15,7 +15,7 @@ export function ExperienceItem({
   return (
     <div className="experience_item flex items-center gap-2" title={title}>
       {svgElement}
-      <div className="experience_bar flex items-center border-[1px] border-border-color rounded-xl w-[300px]">
+      <div className="experience_bar flex items-center border-[1px] border-border-color rounded-xl w-[80%] md:w-[300px]">
         <div
           className={"actual_experience flex items-center justify-center bg-gradient-to-r from-bg-gradient-start to-bg-gradient-end rounded-xl"}
           title={title}
