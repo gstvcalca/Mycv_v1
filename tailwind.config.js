@@ -21,6 +21,21 @@ export default {
         "diagonal-stripes": "repeating-linear-gradient(-45deg, var(--bg-secondary), var(--bg-secondary) 2px, var(--bg-primary) 2px, var(--bg-primary) 5px)",
         "grid": "url('./bg.png')"
       },
+      keyframes: {
+        typing: {
+          from: {width: '0'},
+          to: {width: '100%'}
+        },
+        blink: {
+          '0%, 100%': {borderColor: 'currentColor'},
+          '50%': {borderColor: 'transparent'}
+        }
+      },
+      animation: {
+        typing: 'typing 4s steps(27) forwards',
+        blink: 'blink .3s step-end infinite',
+        'typing-blink': 'typing 1.5s steps(27) forwards, blink 1.5s step-end infinite',
+      },
     },
     
   },

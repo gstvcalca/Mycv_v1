@@ -3,13 +3,13 @@ import { ArrowBigDown } from "lucide-react";
 export function PRDOPage() {
   return (
     <div>
-      <div className="w-full h-40 px-80 flex justify-start items-end gap-2">
-        <img src="./arcelormittal.svg" className="h-36"></img>
-        <h2 className="text-black text-4xl font-bold tracking-wide pb-2">
+      <div className="w-full h-40 px-[10%] lg:px-[20%] flex justify-start items-end gap-2">
+        <img src="./arcelormittal.svg" className="h-16 lg:h-36"></img>
+        <h2 className="text-black text-base lg:text-2xl font-bold tracking-wide pb-2">
           Automating a billing process: ArcelorMittal Portal RDO
         </h2>
       </div>
-      <div className="flex-1 bg-zinc-900 min-h-screen w-full text-zinc-300 items-center justify-center py-10 px-80 space-y-6 text-xl">
+      <div className="flex-1 bg-zinc-900 min-h-screen w-full text-zinc-300 items-center justify-center py-10 px-[10%] lg:px-[20%] space-y-6 text-xl">
         <div className="space-y-2">
           <h2 className="text-3xl font-bold">\ \ The process</h2>
           <div className="h-px w-2/3 border-t-2 border-white rounded-full" />

@@ -5,6 +5,7 @@ import {
 import { MainPage } from ".";
 import { PRDOPage } from "./PRDOPage";
 import { JLCPayroll } from "./JLCPayrollPage";
+import CarouselPage from "./CarouselPage";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/jlcpayroll",
     element: <JLCPayroll/>
+  },
+  {
+    path: "/carousel",
+    element: <CarouselPage/>
   }
 ])
 
