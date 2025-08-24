@@ -9,11 +9,11 @@ export default function Carousel({children}: CarouselProps){
     const [active, setActive] = useState(0);
   
   return (
-    <div className="">
+    <div className="relative">
       {children_array[active]}
-      <div className="flex space-x-4 justify-center items-center m-3">
+      <div className="flex space-x-4 justify-center items-center m-3 absolute bottom-0 left-0 right-0">
         {children_array.map((_, i) => (
-          <button className={`w-3 h-3 rounded-full ` + (active === i && "bg-blue-300" || "bg-gray-300")}
+          <button key={i} className={`cursor-pointer w-3 h-3 rounded-full ` + (active === i && "bg-blue-300" || "bg-gray-300")}
           onClick={() => setActive(i)}/>
         ))}
       </div>

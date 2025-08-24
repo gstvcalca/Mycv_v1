@@ -21,11 +21,11 @@ export function WorkItem({
   tags,
 }: WorkItemProps) {
   const ImgElement = (
-    <img src={img_url} className="size-16 rounded-lg border-border-color" />
+    <img src={img_url} className="size-16 rounded-lg border-(--border-color)" />
   );
 
   return (
-    <div className="work_item border-[1px] border-border-color rounded-xl p-3 text-justify bg-diagonal-stripes">
+    <div className="work_item border-[1px] border-(--border-color) rounded-xl p-3 text-justify bg-diagonal-stripes">
       <div className="flex items-center gap-2 flex-col md:flex-row">
         {link_url ? (
           <a href={link_url} target="_blank">

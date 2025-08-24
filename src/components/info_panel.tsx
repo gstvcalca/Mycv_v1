@@ -24,7 +24,7 @@ export function InfoPanel() {
         </div>
       </InfoSection>
       <InfoSection title="education">
-        <div className="border-l-2 border-border-color border-solid pl-2 py-1 gap-2 items-center">
+        <div className="border-l-2 border-(--border-color) border-solid pl-2 py-1 gap-2 items-center">
           <p
             className="education-title font-semibold mr-1"
             data-118n="bachelor">
@@ -39,7 +39,7 @@ export function InfoPanel() {
           <span data-118n="brazil">, Brazil</span>
           <p className="text-text-secondary text-sm">2017 – 2021</p>
         </div>
-        <div className="border-l-2 border-border-color border-solid pl-2 py-1 gap-2 items-center">
+        <div className="border-l-2 border-(--border-color) border-solid pl-2 py-1 gap-2 items-center">
           <p
             className="education-title font-semibold mr-1"
             data-118n="diploma_web">

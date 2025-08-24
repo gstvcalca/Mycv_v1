@@ -120,7 +120,7 @@ export function WorkExperience() {
               plan and work orders.
             </p>
           </WorkItemPlain>
-          <div className="h-px w-full border-border-color border-[1px] my-5 box-border" />
+          <div className="h-px w-full border-(--border-color) border-[1px] my-5 box-border" />
           <WorkItemPlain
             title="Intern"
             title_translation_reference="ampi_intern_title"
