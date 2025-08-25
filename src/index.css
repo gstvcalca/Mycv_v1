@@ -23,6 +23,10 @@
   .tag-styling {
     @apply py-1 px-2 ml-1 my-1 border-(--border-color) border-[1px] text-zinc-700 rounded-xl text-xs font-semibold
   }
+
+  .bg-diagonal-stripes {
+    @apply bg-[repeating-linear-gradient(-45deg,var(--bg-secondary),var(--bg-secondary)_2px,var(--bg-primary)_2px,var(--bg-primary)_5px)]
+  }
 }
 
 @keyframes typing {
@@ -34,5 +38,16 @@
 @keyframes blink {
   0%, 100%{border-color: currentColor}
   50% {border-color: transparent}
+}
+
+@theme {
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-border-color: var(--border-color);
+  --color-bg-gradient-start: var(--bg-gradient-start);
+  --color-bg-gradient-end: var(--bg-gradient-end);
+  --color-bg-modal: var(--bg-modal);
 }
 

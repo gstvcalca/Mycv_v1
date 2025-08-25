@@ -58,12 +58,12 @@ export function MainPage() {
 
   return (
     <div>
-      <main className="flex flex-col min-h-screen border-2 py-12 px-[6%] pt-[0.5%] space-y-6 items-center justify-center bg-bg-primary text-text-primary relative text-lg">
+      <main className="flex flex-col min-h-screen py-12 px-[6%] pt-[0.5%] space-y-6 items-center justify-center bg-bg-primary text-text-primary relative text-lg">
         <ToggleComponents
           changeLanguage={changeLanguage}
           setThemeVariables={setThemeVariables}
         />
-        <div className="flex flex-1 w-full bg-grid bg-no-repeat bg-center flex-col lg:flex-row">
+        <div className="flex flex-1 w-full bg-[url('./bg.png')] bg-no-repeat bg-center flex-col lg:flex-row">
           <div className="flex-1 header-container gap-3 flex flex-col">
             <div className="header-description flex lg:gap-6 flex-col lg:flex-row items-center">
               <ProfileImage />
